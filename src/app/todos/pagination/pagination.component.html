@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="page">
+    <button class="btn-prev" [ngClass]="{ disable: currentPageIndex === 0 }" (click)="changePage(currentPageIndex - 1)">
+      &laquo; Previous
+    </button>
+    <button class="btn btn-danger m-3 p-10" [ngClass]="{ active: currentPageIndex === page }" *ngFor="let page of pages; let i = index "
+      (click)="changePage(page)">
+      {{page}}
+    </button>
+    <button class="btn-next" [ngClass]="{ disable: currentPageIndex === 15 }" (click)="changePage(currentPageIndex + 1)">Next &raquo;</button>
+  </div>
+ </div>

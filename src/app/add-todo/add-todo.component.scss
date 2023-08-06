@@ -1,0 +1,22 @@
+
+
+.create-todo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    >input{
+        width: 500px;
+        padding: 10px 0;
+        border: none;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    >button{
+        border: 1px solid dodgerblue;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+.btn-add:hover{
+    background-color: dodgerblue;
+}

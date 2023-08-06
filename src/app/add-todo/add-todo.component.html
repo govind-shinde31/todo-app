@@ -1,0 +1,7 @@
+
+    <form>
+        <div class="create-todo">
+            <input #myTodo type="text" value="" ngModel />
+            <button class="btn-add" type="submit" value="Add todo" (click)="createTodos(myTodo.value)">Add todo</button>
+        </div>
+    </form>

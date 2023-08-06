@@ -1,0 +1,50 @@
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .btn {
+      margin: 0 5px;
+      padding: 5px;
+      border-radius: 5px;
+      background-color: #10bc27;
+      border: none;
+      color: white;
+      text-align: center;
+      font-size: 16px;
+      opacity: 0.6;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      opacity: 1;
+
+    }
+
+    .btn-prev, .btn-next {
+      border: 2px solid #f9fff9;
+      display: inline-block;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 5px;
+      background-color: #04AA6D;
+      color: white;
+      opacity: 1;
+    }
+    .btn-prev:hover{
+      opacity: 0.6;
+      color: black;
+    }
+
+
+    .active {
+      background:#10bc27;
+      opacity: 1;
+    }
+    .disable {
+      pointer-events: none;
+      opacity: 0.3;
+    }
+
+    
