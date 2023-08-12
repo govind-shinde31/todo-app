@@ -1,8 +1,12 @@
 <div class="container">
-    <h1>{{todosTitle}}</h1>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <h1 routerLink="">{{todosTitle}}</h1>
+        <button routerLink="complete">complete</button>
+        <!-- <app-complete-todo></app-complete-todo> -->
+    </div>
     <app-add-todo (addItem)="addTodo($event)"></app-add-todo>
     <div class="todo-list">
-        <app-item *ngFor="let todo of todos" [todoItem]="todo" (deleteTodo)="deleteTodo($event)"></app-item>
+        <app-item *ngFor="let todo of todo" [todoItem]="todo" (deleteTodo)="deleteTodo($event)"></app-item>
         <app-pagination (pageChange)="changePage($event)"   [pages]="pages"></app-pagination>
 
 </div>

@@ -9,7 +9,7 @@ import { Todos } from '../todos';
 })
 export class TodosComponent {
   todosTitle: string = "To Do App";
-  todos: any;
+  todo: any;
   limit: number = 10;
   allTodos: number = 0;
   skip: number = 0;
@@ -26,9 +26,8 @@ export class TodosComponent {
   }
   getTodo() {
     this.todoService.getTodos(this.limit, this.skip).subscribe((data: any) => {
-      this.todos = data.todos;
+      this.todo = data.todos;
       this.allTodos = data.total;
-      // console.log(this.todos)
       let page = this.allTodos / this.limit;
       if (this.pages.length === 0) {
         for (let i = 1; i <= page; i++) {
@@ -46,7 +45,9 @@ export class TodosComponent {
    }
 
    addTodo(createTodo:string){
-    alert(createTodo);
+    this.todoService.saveTodo(createTodo).subscribe((res:any)=>{
+      console.log(res)
+    })
   
    }
 

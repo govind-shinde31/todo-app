@@ -1,0 +1,16 @@
+
+ul li{
+    list-style-type: none;
+    padding: 10px ;
+    width: 550px;
+    margin-left: 30%;
+    margin-bottom:10px;
+    border-radius: 5px;
+    > div{
+        float: right;
+    }
+  }
+  ul li:nth-child(odd) {
+      background-color: #fff;
+      color: rgb(154, 14, 154);
+    }

@@ -10,13 +10,15 @@ import { PaginationComponent } from './todos/pagination/pagination.component';
 import { AddTodoComponent } from './add-todo/add-todo.component';
 import { ItemComponent } from './todos/item/item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CompleteTodoComponent } from './complete-todo/complete-todo.component';
 @NgModule({
   declarations: [
     AppComponent,
     TodosComponent,
     PaginationComponent,
     AddTodoComponent,
-    ItemComponent
+    ItemComponent,
+    CompleteTodoComponent
   ],
   imports: [
     BrowserModule,

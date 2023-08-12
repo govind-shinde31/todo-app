@@ -1,0 +1,10 @@
+<div class="container">
+<button routerLink="../">Back</button>
+
+
+    <div class="todo-list">
+        <app-item *ngFor="let todo of todo" [todoItem]="todo"></app-item>
+        <app-pagination (pageChange)="changePage($event)"   [pages]="pages"></app-pagination>
+
+    </div>
+</div>

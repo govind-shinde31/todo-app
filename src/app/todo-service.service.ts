@@ -6,8 +6,7 @@ import { Observable} from 'rxjs'
   providedIn: 'root'
 })
 export class TodoServiceService {
- url ="https://dummyjson.com/todos";
- deleteUrl ="https://dummyjson.com/todos/";
+url ="https://dummyjson.com/todos/";
 
 
 
@@ -22,7 +21,7 @@ export class TodoServiceService {
   };
 
   deleteTodo(id:number){
-    return this.http.delete(this.deleteUrl +'?=id' + id)
+    return this.http.delete(this.url +'?=id' + id)
   }
 
 }
