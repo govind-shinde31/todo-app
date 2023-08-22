@@ -1,7 +1,7 @@
 
     <form>
         <div class="create-todo">
-            <input #myTodo type="text" value="" ngModel />
-            <button class="btn-add" type="submit" value="Add todo" (click)="createTodos(myTodo.value)">Add todo</button>
+            <input #myTodo class="rounded-start-3" type="text" value="" ngModel />
+            <button class="btn btn-success rounded-end-3 bg-success" type="submit" value="Add todo" (click)="createTodos(myTodo.value)">Add todo</button>
         </div>
     </form>

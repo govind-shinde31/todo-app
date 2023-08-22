@@ -7,7 +7,7 @@ import { TodoServiceService } from '../todo-service.service';
   styleUrls: ['./complete-todo.component.scss']
 })
 export class CompleteTodoComponent {
-  todosTitle: string = "To Do App";
+  title: string = "Completed Todo";
   todo: any;
   limit: number = 10;
   allTodos: any = 0;
