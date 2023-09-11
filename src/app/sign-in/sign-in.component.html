@@ -1,0 +1,75 @@
+<section class="vh-100" style="background-color: #508bfc">
+  <div class="container py-5 h-100">
+    <div class=" row d-flex justify-content-center align-items-center">
+      <div class="col-12 col-md-5 col-sm-4">
+        <div class="card shadow-2-strongbg-light p-4 rounded-4">
+          <div class="signup-form">
+            <h2 class="text-center text-primary">Sign Up</h2>
+            <form class="" (ngSubmit)="onSubmit(signupForm.value)" #signupForm="ngForm">
+              <div class="form-group mb-3">
+                <label class="form-label" for="firstName">First Name:</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="firstName"
+                  name="firstname"
+                  [(ngModel)]="formData.firstname"
+                  required
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label class="form-label" for="lastName">Last Name:</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="lastName"
+                  name="lastname"
+                  [(ngModel)]="formData.lastname"
+                  required
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label class="form-label" for="email">Email:</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  id="email"
+                  name="email"
+                  [(ngModel)]="formData.email"
+                  required
+                  email
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label class="form-label" for="role">Role:</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="role"
+                  name="role"
+                  [(ngModel)]="formData.role"
+                  required
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label class="form-label" for="password">Password:</label>
+                <input
+                  class="form-control"
+                  type="password"
+                  id="password"
+                  name="password"
+                  [(ngModel)]="formData.password"
+                  required
+                  minlength="8"
+                />
+              </div>
+              <button class="btn btn-primary" type="submit" [disabled]="!signupForm.valid">
+                Sign Up
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,7 +1,7 @@
     <div class="todo-item">
         <ul>
             <li>
-                <i class="fa-sharp fa-regular fa-sm">{{todoItem.todo}}</i>
+                <i class="fa-sharp fa-regular fa-sm">{{todoItem.title}}</i>
                 <i class="fa-sharp fa-regular fa-sm">{{todoItem.completed}}</i>
 
                 <div><fa-icon class="fa-sharp fa-regular fa-trash" (click)="onDeleteTodo(todoItem.id)" [icon]="delete"></fa-icon></div>

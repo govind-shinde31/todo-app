@@ -9,7 +9,7 @@ import { Todos } from '../todos';
 })
 export class TodosComponent {
   todosTitle: string = "To Do App";
-  todo: any;
+  todo:any;
   limit: number = 10;
   allTodos: number = 0;
   skip: number = 0;
@@ -17,16 +17,15 @@ export class TodosComponent {
   currentPageIndex = 1;
 
 
-  constructor(private todoService: TodoServiceService) { }
+  constructor(private todoService: TodoServiceService) {}
 
 
   ngOnInit() {
     this.getTodo();
-    // this.text(this.currentPageIndex)
   }
   getTodo() {
     this.todoService.getTodos(this.limit, this.skip).subscribe((data: any) => {
-      this.todo = data.todos;
+      this.todo = data;
       this.allTodos = data.total;
       let page = this.allTodos / this.limit;
       if (this.pages.length === 0) {
@@ -53,8 +52,9 @@ export class TodosComponent {
 
    deleteTodo(id:number){
     this.todoService.deleteTodo(id).subscribe((res:any)=>{
-console.log(id);
-alert(id);
+      console.log(res);
+      alert(res);
+      return res;
     })
    }
 

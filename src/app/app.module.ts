@@ -11,6 +11,8 @@ import { AddTodoComponent } from './add-todo/add-todo.component';
 import { ItemComponent } from './todos/item/item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CompleteTodoComponent } from './complete-todo/complete-todo.component';
+import { LoginComponent } from './login/login.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,9 @@ import { CompleteTodoComponent } from './complete-todo/complete-todo.component';
     PaginationComponent,
     AddTodoComponent,
     ItemComponent,
-    CompleteTodoComponent
+    CompleteTodoComponent,
+    LoginComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
