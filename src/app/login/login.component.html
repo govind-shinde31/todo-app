@@ -8,12 +8,16 @@
               Login
             </h2>
 
+           <form (ngSubmit)="login(loginForm.value)" #loginForm="ngForm">
             <div class="form-outline mb-4">
               <input
                 type="email"
                 id="email"
                 placeholder="Email"
                 class="form-control"
+                name="email"
+                [(ngModel)]="formData.email"
+                required
               />
             </div>
 
@@ -23,12 +27,16 @@
                 id="password"
                 placeholder="Password"
                 class="form-control"
+                name="password"
+                [(ngModel)]="formData.password"
+                required
               />
             </div>
 
             <button class="btn btn-outline-primary mb-4" type="submit">
               Login
             </button>
+           </form>
 
             <div class="col d-flex justify-content-center">
               <div class="col">

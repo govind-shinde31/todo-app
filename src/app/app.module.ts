@@ -10,9 +10,11 @@ import { PaginationComponent } from './todos/pagination/pagination.component';
 import { AddTodoComponent } from './add-todo/add-todo.component';
 import { ItemComponent } from './todos/item/item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { CompleteTodoComponent } from './complete-todo/complete-todo.component';
 import { LoginComponent } from './login/login.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { CompleteComponent } from './complete/complete.component';
+import { AdminComponent } from './admin/admin.component';
+import { RegularuserComponent } from './regularuser/regularuser.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,9 +22,11 @@ import { SignInComponent } from './sign-in/sign-in.component';
     PaginationComponent,
     AddTodoComponent,
     ItemComponent,
-    CompleteTodoComponent,
     LoginComponent,
-    SignInComponent
+    SignInComponent,
+    CompleteComponent,
+    AdminComponent,
+    RegularuserComponent
   ],
   imports: [
     BrowserModule,
