@@ -1,6 +1,5 @@
 import { Component, OnInit, numberAttribute } from '@angular/core';
 import { TodoServiceService } from '../todo-service.service';
-import { Todos } from '../todos';
 
 @Component({
   selector: 'app-todos',

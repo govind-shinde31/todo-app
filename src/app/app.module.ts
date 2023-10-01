@@ -15,6 +15,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { CompleteComponent } from './complete/complete.component';
 import { AdminComponent } from './admin/admin.component';
 import { RegularuserComponent } from './regularuser/regularuser.component';
+import { UserComponent } from './user/user.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { RegularuserComponent } from './regularuser/regularuser.component';
     SignInComponent,
     CompleteComponent,
     AdminComponent,
-    RegularuserComponent
+    RegularuserComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

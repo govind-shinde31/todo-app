@@ -8,7 +8,7 @@ import { User } from '../model/user.model';
 export class UserService {
 
 baseUrl = "http://127.0.0.1:5000/api/user";
-loginUrl = "http://127.0.0.1500/api/login"
+loginUrl = "http://127.0.0.1:5000/api/login"
 
   constructor(private http:HttpClient) { }
 

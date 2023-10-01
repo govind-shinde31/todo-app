@@ -1,0 +1,30 @@
+<div class="vh-100" style="background-color: #508bfc;">
+<div class="row d-flex justify-content-center align-item-center py-5">
+    <div class="col-8 col-md-6 col-sm-6">
+        <div class="rounded-4 card shadow-2-strongbg-light p-4">
+            <form (ngSubmit)="taskAssign(adminTaskForm.value)" #adminTaskForm="ngForm">
+             <div>
+                <h3 class="text-primary mb-4">Create Task</h3>
+                <div>
+                    <textarea class="border rounded mb-4 col-8 col-md-6 col-sm-8" name="task" id="task" cols="50" rows="5" [(ngModel)]="formData.firstname"></textarea>
+                </div>
+               <div class="dropdown">
+                <label for="assign">Users:</label>
+               <div>
+                <select [(ngModel)]="selectedUser" name="selectedUser"> 
+                    <!-- <option value="user"> {{user.firstname}} </option> -->
+                    <option >govind</option>
+                    <option>hi</option>
+                    <option>hello</option>
+                </select>
+               </div>
+               </div>
+               <div>
+                <button class="btn btn-primary float-right">create task</button>
+               </div>
+             </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
